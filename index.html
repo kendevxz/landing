@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My landing page</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- We need this line below for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wix+Madefor+Display:wght@800&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+
+<body>
+  <div class="curtain">
+  <div class="navbar">
+    <div class="navbar__text">
+      <h1>JOIN THE WAR FOR CYBERTRON!</h1>
+      <p>We've suffered losses, but we've not lost the war.</p>
+    </div>
+    <div style="margin: 0 50px;">
+      <button id="main" class="button__primary" role="button"><span>JOIN NOW!</span><span>ROLLOUT!</span></button>
+    </div>
+    <a href="#">
+      <i class="fa-solid fa-bars" onclick="openNav()"></i>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "350px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.querySelector("video").style.filter = "brightness(50%)";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight = "0";
+          document.querySelector("video").style.filter = "brightness(100%)";
+        }
+      </script>
+    </a>
+  </div>
+
+  <div>
+      <video autoplay muted loop id="myVideo" width="100%" onclick="closeNav()">
+        <source src="videos/cybertron.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="container">
+    <div class="cards__text">
+      <h2>FREEDOM IS THE RIGHT OF ALL SENTIENT BEINGS.</h2>
+      <p>Here's what you can do to help Optimus Prime!</p>
+      </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="images/1.png" alt="">
+              </div>
+              <div class="card__content__text">
+                <h4>PRE-ORDER</h4>
+                <p>Pre-order Transformers: War for Cybertron and get pre-order bonuses.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="images/2.png" alt="">
+              </div>
+              <div class="card__content__text">
+                <h4>WAIT FOR IT!</h4>
+                <p>Go have some fun in real life and your families before 17th of June!</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__image">
+                <img src="images/3.png" alt="">
+              </div>
+              <div class="card__content__text">
+                <h4>FOR FREEDOM!</h4>
+                <p>Take the mantle of your favorite Cybertronian and fight for freedom!.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- code a footer -->
+
+</body>
+</html>

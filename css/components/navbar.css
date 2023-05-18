@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 80;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  z-index: 5;
+}
+
+.navbar__text{
+  flex-grow: 1;
+}
+
+.navbar__text h1 {
+  white-space: nowrap;
+  color: white;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Wix Madefor Display', sans-serif;
+  letter-spacing: 8px;
+}
+
+.navbar__text p {
+  white-space: nowrap;
+  color: white;
+  opacity: .7;
+  font-size: 35px;
+  font-weight: 200;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navbar a {
+  color: #fafafa;
+  font-size: 50px;
+  margin-right: 80px;
+}
+
+#mySidenav {
+  background-image: url("../../images/tf-dd.png");
+  background-position: bottom;
+}
+
+.sidenav {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
